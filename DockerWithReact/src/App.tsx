@@ -17,6 +17,12 @@ const decNumber =() =>{
 const incNumber =() =>{
   setNumber(number+1);
 }
+const zero = () =>{
+  
+  setNumber(0);
+
+}
+
   return(
 <>
 <h1>React Application with Docker</h1>
@@ -28,6 +34,7 @@ const incNumber =() =>{
 <h4>{number}</h4>
 <button onClick={decNumber}>decrease</button>
 </div>
+<button onClick={zero}>Reset</button>
 </div>
     </>
   )
