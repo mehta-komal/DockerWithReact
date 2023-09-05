@@ -3,7 +3,7 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [number, setNumber] = useState(0);
+  const [number, setNumber] = useState<number>(0);
 
 const decNumber =() =>{
   if(number>0){
@@ -11,7 +11,7 @@ const decNumber =() =>{
   
   }else{
     alert("count value is 0");
-    setNumber(number);
+    setNumber(0);
   }
 }
 const incNumber =() =>{
